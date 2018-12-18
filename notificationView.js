@@ -4,7 +4,6 @@ jQuery.noConflict();
     'use strict';
     // アプリカスタマイズjsと競合する可能性があるのでアプリ画面ではロードしない
     const domain = '{subdomain}.cybozu.com'; // ご自身の環境のサブドメイン
-    // if (!(location.href.startsWith('https://' + domain + '/k/#/') || location.href === 'https://' + domain + '/k/')) return;
     if (!(location.href.indexOf('https://' + domain + '/k/#/') === 0 || location.href === 'https://' + domain + '/k/')) return;
 
     const taskAPPID = xx; // To DoアプリID
